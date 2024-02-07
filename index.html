@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords"
+        content="camaras, tecnologia, telecomunicaciones, seguridad, seguridad logica, electronica, paraguay, uruguay" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="googlebot" content="Index, Follow" />
+    <meta name="robots" content="all" />
+    <meta property="og:url" content="fmtech.com">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="FM Tech | Vanguard technology">
+    <meta property="og:description"
+        content="FM Tech es una empresa dedicada a la tecnología con un enfoque en telecomunicaciones y electronica.">
+    <title>FM - Tech</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Agrega la fuente Lato desde Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap">
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+
+    
+
+</head>
+
+<body>
+
+    <header id="site-header">
+        <div class="logo-container">
+            <h1><a href="#Inicio"><img src="./static/logo.png" alt="logo"></a></h1>
+        </div>
+        <button id="mobile-nav-toggle">☰</button> <!-- Botón desplegable para dispositivos móviles -->
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#video-container">Sobre FM Tech y Servicios</a>
+            <a href="#box-seleciones">Soluciones</a>
+            <a href="#proyectos">Proyectos</a>
+            <a href="#contactos">Contacto</a>
+        </nav>
+    </header>
+    <section id="inicio" class="FMTechvanguardia">
+       <div class="imagenes">
+            <a href="#selectronica-tab"><img src="./static/electronica.png" alt="camaras_celular" class="camaras"></a>
+            <a href="#camaras"><img src="./static/camaras cel dvr.png" alt="electronica" class="electronica" style="top: 480px; left: 703.5px; display: block;"></a>
+            <a href="#redes"><img src="./static/redes.png" alt="fibra" class="redes"></a>
+        </div>
+        <img src="./static/fondo.jpg" alt="mundo conectado" class="background-image">
+        <div class="text-container"> <!-- Nuevo contenedor para el fondo opaco -->
+            <h3>FM Tech</h3>
+            <h2>TECNOLOGIA DE</h2>
+            <h1>VANGUARDIA</h1>
+            <div class="text-background">
+                <h4>Somos una empresa dedicada a la innovacion tecnologica
+                    <br>
+                    con un enfoque en telecomunicaciones
+                </h4>
+            </div>
+        </div>
+        <div class="container">
+            <div class="active_mind">
+                <img src="./static/logo.png" alt="logo">
+                <div class="text">
+                    <h5> <strong>ACTIVE</strong> </h5>
+                    <h5> <strong>MIND</strong> </h5>
+                </div>
+            </div>
+            <div class="tecnico">
+                <p>Con un equipo técnico excepcional, nos esforzamos por ofrecer soluciones y servicios de la más alta
+                    calidad,
+                    respaldados por asesoramiento de expertos y un gran compromiso a los clientes.
+                </p>
+                <p> Desde nuestra fundación en Paraguay, hemos perseguido la integración de tecnología para brindar a
+                    nuestros clientes
+                    una experiencia única. Elija la excelencia, elija nuestros servicios y déjenos
+                    llevar su visión a nuevas alturas.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section id="video-container">
+        <div id="video-container" class="video-container">
+            <div class="background-image2" id="backgroundImage">
+                <div class="play-overlay" id="playOverlay">
+                    <img src="./static/botonplay.png" alt="Play" class="play-icon" id="playButton">
+                </div>
+            </div>
+            <div class="overlay" id="overlay">
+                <div class="video-popup" id="video-popup">
+                    <iframe id="video-frame" width="720" height="480" src="" frameborder="0" allowfullscreen></iframe>
+                    <span class="close-popup" id="close-popup">&times;</span>
+                </div>
+            </div>
+            <div id="iconos-servicios-container" class="iconos-servicios-container">
+                <img src="./static/iconos-servicios.png" alt="iconos de servicio">
+            </div>
+            <div id="nuestrosServicios" class="nuestrosServicios">
+                <div id="consultoria">
+                    <img src="./static/consultoria-icono.png" alt="Icono Consultoria">
+                    <h2>CONSULTORIA</h2>
+                    <p>
+                        Ofrecemos asesoría especializada en diversas disciplinas tecnológicas,
+                        abarcando campos como Networking, Seguridad, Virtualización, Respaldo de datos, Continuidad de
+                        Negocios y entornos corporativos.</p>
+                    <a href="#soluciones" class="btn-link"><strong>Más información</strong></a>
+                </div>
+
+                <div id="ejecucion-de-proyectos">
+                    <img src="./static/ejecucion-icono.png" alt="Icono Proyectos">
+                    <h2>EJECUCIÓN DE PROYECTOS</h2>
+                    <p>Desarrollamos y ejecutamos proyectos integrales "llave en mano",
+                        abarcando aspectos tanto de hardware como de software, junto con los servicios necesarios para
+                        su implementación exitosa.</p>
+                    <a href="#desarrollo-proyectos" class="btn-link"><strong>Más información</strong></a>
+                </div>
+
+                <div id="servicio-de-soporte">
+                    <img src="./static/soporte-icono.png" alt="Icono Soporte">
+                    <h2>SERVICIO DE SOPORTE</h2>
+                    <p>
+                        FM Tech ofrece soporte técnico completo para todos sus sistemas y dispositivos de seguridad
+                        electrónica, informática y telecomunicaciones.
+                    </p>
+                    <a href="#soporte-tecnico" class="btn-link"><strong>Más información</strong></a>
+                </div>
+            </div>
+    </section>
+
+    <section id="soluciones">
+        <div class="soluciones-img">
+            <h2 class="text-soluciones" id="box-seleciones">Soluciones</h2>
+
+            <ul class="ul-central">
+                <li>
+                    <a class="tab-link active" id="selectronica-tab" href="#selectronica" role="tab" aria-controls="selectronica"
+                         onclick="changeImage('selectronica-tab')">
+                        <span><img src="./static/selectronica-activado.png" alt=""></span>Seguridad Electronica
+                    </a>
+                </li>
+                <li>
+                    <a class="tab-link active" id="telecomunicaciones-tab" href="#telecomunicaciones" role="tab"
+                        aria-controls="telecomunicaciones" onclick="changeImage('telecomunicaciones-tab')">
+                        <span><img src="./static/redes-desactivado.png" alt=""></span>Telecomunicaciones
+                    </a>
+                </li>
+                <li>
+                    <a class="tab-link active" id="slogica-tab" href="#slogica" role="tab" aria-controls="slogica"
+                         onclick="changeImage('slogica-tab')">
+                        <span><img src="./static/logica-desactivado.png" alt=""></span>Seguridad Logica
+                    </a>
+                </li>
+            </ul>
+
+            
+<!-- Contenido principal de la página -->
+<div class="content">
+    <div id="soluciones-tabs">
+        <!-- tab Seguridad Electronica -->
+        <div id="selectronica" class="tab-content">
+            <div id="listas-electronicas">
+                <!-- producto -->
+                <div id="camaras-vig">
+                    <article>
+                        <div>
+                            <a href="#" class="openModal" data-modal-target="myModal1"><img src="./static/camaras cel dvr.png" alt="camaras"></a>
+                        </div>
+                        <div class="content">
+                            <div>
+                                <p>Seguridad Electrónica</p>
+                                <h3>CCTV: SISTEMAS DE CÁMARAS DE SEGURIDAD</h3>
+                                <p>Brindamos soluciones integrales en video vigilancia: video analítica, lectura de matrículas, detección facial y análisis de comportamiento.</p>
+                                <div class="conocer">
+                                    <a href="#" class="openModal" data-modal-target="myModal1">Conocer más</a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <!-- producto -->
+                <div id="control-acceso">
+                    <article>
+                        <div>
+                            <a href="#" class="openModal" data-modal-target="myModal2"><img src="./static/control-acceso-icono.png" alt="control de acceso"></a>
+                        </div>
+                        <div>
+                            <p>Seguridad Electrónica</p>
+                            <h3>CONTROL DE ACCESO</h3>
+                            <p>Control de accesos para espacios restringidos en oficinas, comercios o industrias.</p>
+                            <div class="conocer">
+                                <a href="#" class="openModal" data-modal-target="myModal2">Conocer más</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <!-- producto -->
+                <div id="alarmas">
+                    <article>
+                        <div>
+                            <a href="#" class="openModal" data-modal-target="myModal3"><img src="./static/alarma-icono.png" alt="alarmas"></a>
+                        </div>
+                        <div>
+                            <p>Seguridad Electrónica</p>
+                            <h3>DETECCIÓN DE INTRUSOS</h3>
+                            <p>Sistemas de seguridad para monitoreo de residencias, oficinas, comercios o industrias.</p>
+                            <div class="conocer">
+                                <a href="#" class="openModal" data-modal-target="myModal3">Conocer más</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>                        
+                <!-- producto -->
+                <div id="detec-incendios">
+                    <article>
+                        <div>
+                            <a href="#" class="openModal" data-modal-target="myModal4"><img src="./static/deteccion-incendios-icono.png" alt="detector incendios"></a>
+                        </div>
+                        <div>
+                            <p>Seguridad Electrónica</p>
+                            <h3>DETECCIÓN DE INCENDIOS</h3>
+                            <p>Soluciones completas en detección de incendios para residencias, condominios, comercios e industrias.</p>
+                            <div class="conocer">
+                                <a href="#" class="openModal" data-modal-target="myModal4">Conocer más</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+        <!-- tab telecomunicaciones -->
+        <div id="telecomunicaciones" class="tab-content">
+            <div id='listas-telecomunicaciones'>
+                <!-- producto -->
+                <div id="VoIP">
+                    <article>
+                        <div>
+                            <a href="#" class="openModal" data-modal-target="myModal5"><img src="static/voip.png" alt=""></a>
+                        </div>
+                        <div>
+                            <p>Telecomunicaciones</p>
+                            <h3>VoIP</h3>
+                            <p>Sistema de telefonía diseñado para ofrecer servicios de comunicación a través de las redes de datos.</p>
+                            <div class="conocer">
+                                <a href="#" class="openModal" data-modal-target="myModal5">Conocer más</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <!-- producto -->
+                <div id="cableado">
+                    <article>
+                        <div>
+                            <a href="#" class="openModal" data-modal-target="myModal6"><img src="static/cableado-estructurado.png" alt=""></a>
+                        </div>
+                        <div>
+                            <p>Telecomunicaciones</p>
+                            <h3>CABLEADO ESTRUCTURADO</h3>
+                            <p>Ofrecemos todos los componentes necesarios para diseñar una red cableada de alta performance de cobre y/o fibra óptica.</p>
+                            <div class="conocer">
+                                <a href="#" class="openModal" data-modal-target="myModal6">Conocer más</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <!-- producto -->
+                <div id="solucioneswifi">
+                    <article>
+                        <div>
+                            <a href="#" class="openModal" data-modal-target="myModal7"><img src="static/soluciones-wifi.png" alt=""></a>
+                        </div>
+                        <div>
+                            <p>Telecomunicaciones</p>
+                            <h3>SOLUCIONES WIFI</h3>
+                            <p>Infraestructura necesaria para dejar operativa su propia red inalámbrica.</p>
+                            <div class="conocer">
+                                <a href="#" class="openModal" data-modal-target="myModal7">Conocer más</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+        <!-- tab Seguridad Logica -->
+        <div id="slogica" class="tab-content">
+            <div id="listas-logica">
+                <!-- producto -->
+                <div id="infrati">
+                    <article>
+                        <div>
+                            <a href="#" class="openModal" data-modal-target="myModal8"><img src="static/infraestructura-ti.png" alt=""></a>
+                        </div>
+                        <div>
+                            <p>Seguridad Lógica</p>
+                            <h3>INFRAESTRUCTURA IT</h3>
+                            <p>Mejoramos la performance de su red y seguridad. Realizamos consultorías y asesoramientos en: Networking, Seguridad Informática, Virtualización, Respaldos, Continuidad De Negocio, Entornos Corporativos.</p>
+                            <div class="conocer">
+                                <a href="#" class="openModal" data-modal-target="myModal8">Conocer más</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modales para cada producto -->
+<div class="modal" id="myModal1">
+    <div class="modal-content" style="max-width: 800px; /* Ajusta el ancho máximo según tus necesidades */">
+        <span class="close" data-modal-close="myModal1">&times;</span>
+        <div id="modal-body">
+            <div class="flex-modal">
+                <div class="background-modal1">        
+                </div>
+                <div>
+                    <h2>CCTV: SISTEMAS DE CÁMARAS DE SEGURIDAD</h2>
+                    <p class="texto1">Brindamos soluciones integrales en video vigilancia: video analítica, lectura de matrículas, detección facial y análisis de comportamiento.</p>
+                    <h3>Garantizando la seguridad de tu negocio desde cualquier ubicación.</h3>
+                    <P class="texto2">FM Tech brinda un amplio catálogo de soluciones para satisfacer las exigencias de diversos tipos de negocios mediante avanzados sistemas de CCTV.
+                        Te permitirá supervisar tu sistema desde cualquier ubicación y dispositivo (teléfono celular, tablet, PC) con conexión a Internet, ofreciéndote acceso a las grabaciones en tiempo real</P>
+                            <a href="#contactos">CONTACTANOS</a>
+                </div>                            
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="myModal2">
+    <div class="modal-content" style="max-width: 800px; /* Ajusta el ancho máximo según tus necesidades */">
+        <span class="close" data-modal-close="myModal2">&times;</span>
+        <div id="modal-body">
+            <div class="flex-modal2">
+                <div class="background-modal2">        
+                </div>
+                <div>
+                    <h2>Control de acceso</h2>
+                    <p class="texto1">Gestión de acceso en áreas limitadas dentro de entornos de oficina, comerciales o industriales.</p>
+                    <h3>Los sistemas de control de acceso permiten registrar de manera automatizada las actividades realizadas en un espacio específico.</h3>
+                    <P class="texto2"><b>Tipos de tecnologías para dispositivos:</b></P>
+                        <ul class="lista-enumerada">
+                            <li>Reconocimiento facial</li>
+                            <li>Biométrico o identificación de venas</li>
+                            <li>Tarjeta de proximidad por RFIF (Radio)</li>
+                            <li>Combinación de tecnologías</li>
+                        </ul>
+                            <a href="#contactos">CONTACTANOS</a>
+                </div>                            
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="myModal3">
+    <div class="modal-content" style="max-width: 800px; /* Ajusta el ancho máximo según tus necesidades */">
+        <span class="close" data-modal-close="myModal3">&times;</span>
+        <div id="modal-body">
+            <div class="flex-modal3">
+                <div class="background-modal3">        
+                </div>
+                <div>
+                    <h2>DETECCIÓN DE INTRUSOS</h2>
+                    <p class="texto1">Sistemas de Monitoreo Profesional y seguro para Residencias, Oficinas, Comercios e Industrias</p>
+                    <h3>FM Tech se distingue por brindar asesoramiento personalizado, adaptando cada solución a las necesidades específicas de cada cliente.</h3>
+                    <P class="texto2">Nuestros sistemas autónomos pueden configurarse para emitir alertas mediante aplicaciones móviles o llamadas en caso de activación de la alarma. Contamos con una atención especializada que garantiza respuestas efectivas a cualquier escenario planteado por nuestros clientes.</P>
+                            <a href="#contactos">CONTACTANOS</a>
+                </div>                            
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="myModal4">
+    <div class="modal-content" style="max-width: 800px; /* Ajusta el ancho máximo según tus necesidades */">
+        <span class="close" data-modal-close="myModal4">&times;</span>
+        <div id="modal-body">
+            <div class="flex-modal4">
+                <div class="background-modal4">        
+                </div>
+                <div>
+                    <h2>DETECCIÓN DE INCENDIOS</h2>
+                    <p class="texto1">Ofrecemos soluciones integrales en la detección de incendios, abarcando desde residencias y condominios hasta comercios e industrias.</p>
+                    <h3>FM Tech proporciona sistemas tanto cableados como inalámbricos para proteger diversos espacios, adaptándose a las necesidades específicas o según las especificaciones del proyecto.</h3>
+                    <P class="texto2">Cada uno de nuestros productos está diseñado conforme a los estándares internacionales obligatorios.</P>
+                            <a href="#contactos">CONTACTANOS</a>
+                </div>                            
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="myModal5">
+    <div class="modal-content" style="max-width: 800px; /* Ajusta el ancho máximo según tus necesidades */">
+        <span class="close" data-modal-close="myModal5">&times;</span>
+        <div id="modal-body">
+            <div class="flex-modal5">
+                <div class="background-modal5">        
+                </div>
+                <div>
+                    <h2>Comunicación de Voz sobre Protocolo de Internet (VoIP).</h2>
+                    <p class="texto1">Plataforma telefónica diseñada para proporcionar servicios de comunicación a través de las redes de datos.</p>
+                    <h3>A continuación, enumeramos algunos sistemas que tienen la capacidad de integrarse de manera eficiente en la infraestructura, brindando una mayor versatilidad y funcionalidad a la red:</h3>
+                    <P class="texto2">Los dispositivos telefónicos IP se conectan directamente a su red cableada, lo que posibilita la realización de llamadas desde su oficina o dispositivo móvil, previamente configurado.</P>
+                            <a href="#contactos">CONTACTANOS</a>
+                </div>                            
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="myModal6">
+    <div class="modal-content" style="max-width: 800px; min-height: 620px; /* Ajusta el ancho máximo según tus necesidades */">
+        <span class="close" data-modal-close="myModal6">&times;</span>
+        <div id="modal-body">
+            <div class="flex-modal6">
+                <div class="background-modal6">        
+                </div>
+                <div>
+                    <h2>CABLEADO ESTRUCTURADO</h2>
+                    <p class="texto1">Proporcionamos todos los elementos esenciales para crear una red cableada de alto rendimiento, ya sea de cobre o fibra óptica.</p>
+                    <h3>Este sistema tiene la capacidad de gestionar un número ilimitado de extensiones tanto locales como remotas a través de internet, incluyendo la funcionalidad de videollamadas.</h3>
+                    <P class="texto2">A continuación, enumeramos algunos sistemas que tienen la capacidad de integrarse de manera eficiente en la infraestructura, brindando una mayor versatilidad y funcionalidad a la red:</P>
+                        <ul class="lista-enumerada">
+                            <li>Redes LAN</li>
+                            <li>Redes Gpon</li>
+                            <li>Sistemas de control como calefacción, ventilación, aire acondicionado, alumbrado, etc.</li>
+                            <li>Alarmas de intrusión, control de acceso, vigilancia, etc.</li>
+                            <li>Sistemas de voz (VoIP), telefonía analógica (PBX)</li>
+                            <li>Protección de incendios e inundaciones, sistema eléctrico, ascensores, etc.</li>
+                        </ul>
+                            <a href="#contactos">CONTACTANOS</a>
+                </div>                            
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="myModal7">
+    <div class="modal-content" style="max-width: 800px; /* Ajusta el ancho máximo según tus necesidades */">
+        <span class="close" data-modal-close="myModal7">&times;</span>
+        <div id="modal-body">
+            <div class="flex-modal7">
+                <div class="background-modal7">        
+                </div>
+                <div>
+                    <h2>Tecnologías WIFI</h2>
+                    <p class="texto1">La infraestructura esencial para poner en funcionamiento tu propia red inalámbrica.</p>
+                    <h3>Facilitamos la conexión inalámbrica de dispositivos como computadoras, smartphones, impresoras, consolas de videojuegos y otros elementos compatibles mediante nuestras soluciones WiFi.</h3>
+                    <P class="texto2">Las redes WiFi pueden implementarse en una variedad de entornos, tanto cerrados como al aire libre, tales como hoteles, aeropuertos, estaciones de autobús, bares, restaurantes, centros comerciales, escuelas, universidades, oficinas, hospitales, plazas y diversos lugares más.</P>
+                            <a href="#contactos">CONTACTANOS</a>
+                </div>                            
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="myModal8">
+    <div class="modal-content" style="max-width: 800px; min-height: 580px; /* Ajusta el ancho máximo según tus necesidades */">
+        <span class="close" data-modal-close="myModal8">&times;</span>
+            <div id="modal-body">
+                <div class="flex-modal8">
+                    <div class="background-modal8">        
+                </div>
+                        <div>
+                            <h2>Infraestructura IT</h2>
+                            <p class="texto1">Optimizamos el rendimiento y la seguridad de su red.</p>
+                            <P class="texto2">Ofrecemos servicios de consultoría y asesoramiento en:</P>
+                                <ul class="lista-enumerada">
+                                    <li>Seguridad Informática</li>
+                                    <li>Virtualización</li>
+                                    <li>Networking</li>
+                                    <li>Continuidad de Negocio</li>
+                                    <li>Entornos Corporativos</li>
+                                    <li>Respaldos</li>
+                                </ul>
+                            <h3>A través del desarrollo de un proceso consultivo, nuestra experiencia y la aplicación de buenas prácticas en diversas tecnologías, generamos un mapa de ruta claro para ofrecer soluciones personalizadas.</h3>
+                                    <a href="#contactos">CONTACTANOS</a>
+                        </div>                            
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+<div class="desarrollo-soporte">
+    <section class="desarrollo-proyectos" id="desarrollo-proyectos">
+        <div>
+            <H2>Desarrollo de Proyectos</H2>
+            <h3>Creamos e implementamos proyectos <b>"llave en mano"</b> que abarcan hardware, software y servicios, ofreciendo soluciones integrales.</h3>
+            <p>Nuestra vasta experiencia en la ejecución de proyectos de gran envergadura nos coloca ante el desafío constante de integrar y armonizar múltiples tecnologías, con el objetivo de construir plataformas que operen de manera colaborativa y segura.
+            En la búsqueda de la excelencia, abrazamos un enfoque imparcial y meticuloso al analizar cada situación. Este enfoque analítico nos permite comprender a fondo las necesidades específicas de nuestros clientes y proporcionar soluciones adaptadas a medida. La combinación de nuestra pericia técnica y un compromiso inquebrantable con la calidad nos posiciona como un socio confiable para aquellos que buscan implementar proyectos complejos con éxito.</p>
+        </div>
+    </section>
+
+    <section class="support" id="soporte-tecnico">
+        <div>
+            <H2>Soporte técnico</H2>
+            <h3>En <b>FM Tech</b>, proporcionamos servicio técnico integral para garantizar el óptimo funcionamiento de todos los equipos e instalaciones en seguridad electrónica, lógica y telecomunicaciones.</h3>
+            <p>Nos encargamos de todo el proceso, desde el equipamiento activo y pasivo hasta la configuración, implementación y puesta en producción de sus plataformas.</p>
+            <p class="garantia">Ofrecemos garantía del fabricante en todos nuestros productos, y nuestras instalaciones están respaldadas por una garantía de un año.</p>
+        </div>
+    </section>
+</div>
+
+<div class="slick-carousel" id="proyectos">
+    <div><a href="https://inaes.edu.py/https://inaes.edu.py/" target="_blank"><img src="static/inaes.jpg" alt="Inaes Logo"></a></div>
+    <div><a href="https://www.ritter.com.py/en/obras" target="_blank"><img src="static/Ritter.jpg" alt="Ritter Construcciones"></a></div>
+    <div><a href="https://www.minna.gov.py/" target="_blank"><img src="static/ninna.jpg" alt="Ministerio ni;es logo"></a></div>
+    <div><a href="https://www.familiarseguros.com.py/" target="_blank"><img src="static/familiar-seguros.jpg" alt="Seguros Familiar logo"></a></div>
+   <!-- <div><a href="enlace5" target="_blank"><img src="imagen5.jpg" alt="Descripción 5"></a></div>
+    <div><a href="enlace6" target="_blank"><img src="imagen6.jpg" alt="Descripción 6"></a></div> -->
+</div>
+
+<section class="contactos" id="contactos">
+    <div class="datos-contacto">
+        <h2>Contactanos</h2>
+
+        <p><b>FM Tech</b></p>
+        <p>+595 (986) 125 156
+        <br>
+        <br>Cnel. Toledo c/ Cancha San Blas
+        <br>- Capiata, Paraguay
+        <br>
+        <br><a href="mailto:omvime@gmail.com">omvime@gmail.com</a></p>
+        <br>
+        <div class="redes">
+            <p><strong>SEGUINOS EN</strong></p>
+            <br>
+            <ul class="seguinos-footer">
+                <a href="#" target="_BLANK"><img src="static/facebook.png" alt="Facebook"></a>
+                <a href="#" target="_BLANK"><img src="static/instagram.png" alt="Instagram"></a>
+            </ul>
+        </div>
+        
+    </div>
+            <div class="container3">
+                <div class="contact-form">
+                    <form action="contact-form/process.php" enctype="multipart/form-data" method="POST" name="contact" id="contact" class="ucf" siq_id="autopick_4294">
+                        <h3>Ponte en contacto</h3>
+                        <div class="form-fields">
+                            <div class="message" style="display: none;"></div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="nombre" accesskey="U">Nombre (*)</label>
+                                    <input class="field" type="text" name="nombre" id="nombre" size="30" required="">
+                                </div>
+                                <div class="form-group">
+                                    <label for="apellido">Apellidos (*)</label>
+                                    <input class="field" type="text" name="apellido" id="apellido" size="30" required="">
+                                </div>
+                                <div class="form-group">
+                                    <label for="telefono" accesskey="P">Teléfono</label>
+                                    <input class="field" type="tel" name="telefono" id="telefono" size="30">
+                                </div>
+                                <div class="form-group">
+                                    <label for="email" accesskey="E">E-mail (*)</label>
+                                    <input class="field" type="email" name="email" id="email" size="30" required="">
+                                </div>
+                                <div class="col-12">
+                                    <label for="mensaje" accesskey="M">Mensaje (*)</label>
+                                    <textarea class="field" name="mensaje" id="mensaje" cols="40" rows="3" required=""></textarea>
+                                </div>
+                        </div>
+
+                                <div class="campos-obligatorios">
+                                    <p><i>* Campos obligatorios</i></p>
+                                </div>
+                          <div class="form-group">
+                                    <input type="hidden" name="g-recaptcha-response">
+                                    <input type="hidden" name="ucf_csrf_token" value="ajhy2zx4jz4g0kscso04gkowk84ockg">
+                                    <button type="submit" class="btn btn-primary btn-sgte">Enviar mensaje</button>
+                                </div>
+                            </div>
+                        
+    
+                        <input type="hidden" name="lang">
+                    </form>
+                </div>
+            </div>
+</section>
+       
+<footer>
+    <div class="container7">
+        <div class="row">
+            <div class="contactos-footer">
+                <h3>Contacto</h3>
+                <p>Dirección: Cnel. Toledo c/ Cancha San Blas - Capiata, Paraguay</p>
+                <p>Teléfono: +595 (986) 125 156</p>
+                <p>Email: omvime@gmail.com</p>
+            </div>
+            <div class="seguinos-footer">
+                <h3>Síguenos</h3>
+                <ul>
+                    <li><a href="#Inicio"><img src="static/facebook.png" alt="Facebook"></a></li>
+                    <li><a href="#Inicio"><img src="static/instagram.png" alt="Instagram"></a></li>
+                    <!-- Agrega aquí más iconos de redes sociales si es necesario -->
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+
+</html>

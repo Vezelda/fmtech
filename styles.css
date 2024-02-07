@@ -1,0 +1,1660 @@
+/* Reset de estilos y estilos básicos */
+body {
+    display: block;
+    margin: 0;
+    padding: 0;
+    background-color: aquamarine;
+    font-family: 'Lato', sans-serif;
+    /* Se aplica la fuente Lato como primera opción */
+    height: 5000px;
+}
+
+
+
+/* Estilos para la barra de inicio */
+header {
+    background-color: rgba(255, 255, 255, 0.9);
+    /* Color de fondo del encabezado */
+    color: #2b2a2a;
+    /* Color del texto en el encabezado */
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    /* Asegura que el encabezado esté por encima de otros elementos */
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Centra horizontalmente el logo y el texto */
+    text-align: center;
+    /* Alinea el texto al centro */
+    margin-bottom: 10px;
+    /* Añade un margen inferior */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+    /* Ajusta el tamaño del texto según tus preferencias */
+}
+
+/* Estilos para el logo */
+header img {
+    max-height: 100px;
+    /* Altura máxima del logo, ajustada para ser un poco más grande */
+    margin-right: 100px;
+    /* Espaciado entre el logo y los enlaces */
+}
+
+nav {
+    display: flex;
+}
+
+nav a {
+    color: #000000;
+    /* Color del texto de los enlaces en la barra de navegación */
+    text-decoration: none;
+    /* Quita el subrayado de los enlaces por defecto */
+    margin-left: 10px;
+    /* Espaciado entre enlaces */
+    font-size: 18px;
+    /* Ajusta el tamaño del texto de los enlaces según tus preferencias */
+    padding: 10px 15px;
+    /* Añade relleno para que parezca un botón */
+    border: none;
+    /* Quita el borde del botón */
+    border-radius: 5px;
+    /* Agrega bordes redondeados */
+    transition: background-color 0.3s, color 0.3s, text-decoration 0.3s, margin-bottom 0.3s;
+    /* Agrega una transición de color, subrayado y espacio para un cambio suave */
+    position: relative;
+    /* Permite posicionar el borde relativo al elemento padre */
+}
+
+/* Agrega subrayado y espacio al pasar el mouse sobre los enlaces */
+nav a:hover {
+    text-decoration: none;
+    /* Quita el subrayado por defecto */
+    color: #3498db;
+    /* Cambia el color del texto al pasar el mouse */
+    margin-bottom: 1px;
+    /* Añade un poco de espacio debajo del texto */
+    border-bottom: 3px solid #3498db;
+    /* Agrega un borde (línea) debajo del texto */
+}
+
+/* Cambia los estilos al hacer clic en los enlaces */
+nav a:active {
+    color: #ffffff;
+    /* Cambia el color del texto al hacer clic */
+    border: 2px solid #ffffff;
+    /* Agrega un borde al hacer clic */
+}
+
+/* Estilos para el contenido principal */
+main {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Estilos para la imagen de fondo */
+
+.background-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    /* Asegura que el contenido no se desborde */
+}
+
+.background-image {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    /* Se fija en la ventana de visualización */
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+
+
+section.FMTechvanguardia {
+    color: #ffffff;
+    /* Cambia el color del texto a blanco */
+    text-align: center;
+    /* Centra el contenido del texto */
+    padding: 0px;
+    /* Añade un poco de espacio interno para mejorar la legibilidad */
+    position: relative;
+    height: 100vh;
+    /* Establece la altura al 100% de la altura de la ventana */
+    overflow: hidden;
+    /* Evita que el contenido sobresalga del contenedor */
+}
+
+section.FMTechvanguardia h3 {
+    margin: 0;
+    font-family: 'Lato Light', sans-serif;
+    /* Utiliza Lato Regular */
+    font-weight: 800px;
+    /* Peso de la fuente Regular */
+    font-size: 80px;
+    /* Ajusta el tamaño de fuente según tus preferencias */
+    color: #ffffff;
+    /* Cambia el color del texto a amarillo */
+    margin-top: 250px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+section.FMTechvanguardia h4 {
+    margin: 0;
+    font-family: 'Lato Light', sans-serif;
+    /* Utiliza Lato Regular */
+    font-weight: 400px;
+    /* Peso de la fuente Regular */
+    font-size: 30px;
+    /* Ajusta el tamaño de fuente según tus preferencias */
+    color: #ffffff;
+    /* Cambia el color del texto a amarillo */
+    margin-top: 0px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+section.FMTechvanguardia h2,
+section.FMTechvanguardia h1 {
+    margin: 0;
+    font-family: 'Lato Black', sans-serif;
+    /* Utiliza Lato Black para h2 y h1 */
+    margin-bottom: 10px;
+    /* Ajusta el espacio inferior para que el texto esté más arriba */
+    color: #ffffff;
+    /* Cambia el color del texto a amarillo */
+    font-size: 50px;
+    /* Ajusta el tamaño de fuente según tus preferencias */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.text-background {
+    position: relative;
+}
+
+.text-background::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    /* Establece el ancho del cuadro gris */
+    height: 120%;
+    /* Ocupa toda la altura del contenedor principal */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Color de fondo gris opaco */
+    z-index: -1;
+}
+
+.imagenes {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    /* Ajusta el z-index para que esté encima del fondo y del texto */
+}
+
+.imagenes img {
+    width: 18vh;
+    /* Ajusta el ancho según tus necesidades */
+    height: auto;
+    position: relative;
+    /* Cambia la posición relativa para que respete el flujo normal del documento */
+    display: block;
+    /* Hace que la imagen sea un elemento de bloque */
+    margin: 0 auto;
+    /* Centra la imagen horizontalmente */
+    transition: transform 0.3s ease-in-out;
+}
+
+.imagenes img:hover {
+    transform: scale(1.2);
+    /* Puedes ajustar este valor según tus preferencias */
+}
+
+.images-appear {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.images-appear.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    /* Ajusta la altura al 100% de la ventana */
+    background-size: 200px;
+}
+
+.active_mind {
+    background-size: 200px;
+    display: flex;
+    align-items: center;
+    /* Alinea verticalmente el contenido del contenedor */
+    background-color: #ffffff;
+    /* Establece el color de fondo a blanco */
+    color: #000000;
+    /* Establece el color del texto a negro */
+    font-family: 'Lato black', sans-serif;
+    /* Cambia la fuente a Lato Black */
+    line-height: 0.1;
+    /* Ajusta el espacio entre líneas */
+    font-size: 300%;
+    /* Ajusta el valor según sea necesario para igualar con TECNICO */
+    width: 50%;
+    /* Ajusta el ancho para igualar con TECNICO */
+    height: 200px;
+    margin-top: -300px;
+    /* Ajusta el margen superior según sea necesario */
+}
+
+.active_mind img {
+    max-width: 20%;
+    /* Ajusta el ancho máximo del logo según sea necesario */
+    height: auto;
+    /* Mantiene la proporción del logo */
+    margin-right: 10px;
+    /* Ajusta el espacio entre el logo y el texto según sea necesario */
+    padding-left: 20%;
+}
+
+.text {
+    text-align: center;
+    /* Ajusta la alineación del texto según sea necesario */
+    padding-left: 20%;
+}
+
+.tecnico {
+    height: 166px;
+    text-align: center;
+    /* Centra el texto horizontalmente */
+    background-color: #2b2a2a;
+    font-size: 120%;
+    /* Ajusta el valor según sea necesario */
+    padding: 1%;
+    /* Ajusta el espacio interno según sea necesario */
+    width: 50%;
+    /* Ajusta el ancho para igualar con ACTIVE MIND */
+    margin-top: -300px;
+    /* Ajusta el margen superior según sea necesario */
+    text-align: left;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    z-index: 1;
+    background-image: url('./static/playvideo.jpg');
+    /* Reemplaza 'tu-ruta-de-imagen.jpg' con la ruta de tu imagen de fondo */
+    background-size: cover;
+    /* Cubre completamente el contenedor sin repetir la imagen */
+    background-repeat: no-repeat;
+    /* Evita la repetición de la imagen */
+    background-position: center;
+    /* Centra la imagen */
+}
+
+
+.background-image2 {
+    width: 100%;
+    height: 140%;
+    background: url('./static/playvideo.jpg');
+    position: absolute;
+    background-size: cover;
+    /* Cubre completamente el contenedor sin repetir la imagen */
+}
+
+.play-overlay {
+    position: absolute;
+    top: 50%;
+    /* Ajusta la posición vertical según tus necesidades */
+    left: 50%;
+    /* Ajusta la posición horizontal según tus necesidades */
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+.play-icon {
+    width: 100%;
+    /* Ajusta el tamaño del icono de play según tus necesidades */
+    height: 100%;
+    transition: opacity 0.3s ease-in-out, filter 0.3s ease-in-out;
+}
+
+.play-icon:hover {
+    opacity: 0.8;
+    /* Al pasar el ratón sobre el icono, se vuelve ligeramente opaco */
+    filter: brightness(120%);
+    /* Cambia el brillo al pasar el ratón sobre el icono */
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1001;
+}
+
+.video-popup {
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: transparent;
+    width: 50%;
+    height: 50vh;
+    max-height: 80vh;
+    overflow-y: auto;
+    transition: top 1.7s ease-out;
+    /* Agregar una transición para la animación */
+    z-index: 1001;
+    /* Asegurarse de que el pop-up esté en la parte superior */
+}
+
+#video-frame {
+    width: 90%;
+    height: 90%;
+}
+
+.close-popup {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+
+.iconos-servicios-container {
+    position: absolute;
+    z-index: 3;
+    /* Asegúrate de que el z-index sea menor que el de la imagen de fondo */
+    top: 117%;
+    /* Coloca el punto medio del contenedor en el centro vertical */
+    left: 50%;
+    /* Centra el contenedor horizontalmente */
+    transform: translate(-50%, -50%);
+    /* Centra vertical y horizontalmente */
+
+}
+
+.iconos-servicios-container img {
+    width: 100%;
+    /* Hace que la imagen ocupe el 100% del contenedor */
+    height: auto;
+    /* Mantiene la proporción original de la imagen */
+}
+
+
+
+.nuestrosServicios {
+    background-color: rgba(255, 255, 255, 0.9);
+    /* Cambia el valor de alfa según la opacidad deseada (0.0 a 1.0) */
+    z-index: 2;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    /* Establece la dirección de los elementos en fila por defecto */
+    flex-wrap: wrap;
+    /* Permite que los elementos se envuelvan en dispositivos pequeños */
+    justify-content: space-around;
+    /* Ajusta el espacio entre los elementos */
+    align-items: stretch;
+    /* Ajusta la altura de los elementos para que ocupen toda la altura de la caja */
+    top: 127%;
+    text-align: center;
+    left: 50%;
+    /* Centra el contenedor horizontalmente */
+    transform: translateX(-50%);
+    /* Centra el contenedor horizontalmente */
+    width: 60%;
+    /* Ajusta el ancho según tus necesidades */
+    min-height: 200px;
+    /* Establece una altura mínima para asegurar visibilidad */
+    border-radius: 20px;
+    /* Ajusta el valor de acuerdo al redondeo deseado */
+    padding: 2.5%;
+}
+
+#consultoria,
+#ejecucion-de-proyectos,
+#servicio-de-soporte {
+    flex: 1 1 calc(33.33% - 20px);
+    /* Divide el espacio en 3 columnas con espacio entre ellas */
+    margin: 0 0 10px;
+    padding: 0 10px;
+    position: relative;
+}
+
+#consultoria img,
+#ejecucion-de-proyectos img,
+#servicio-de-soporte img {
+    display: none;
+    /* Oculta los iconos en versiones estándar */
+}
+
+.btn-link {
+    color: #000000;
+    /* Color del texto de los enlaces en la barra de navegación */
+    text-decoration: none;
+    /* Quita el subrayado de los enlaces por defecto */
+    margin-left: 10px;
+    /* Espaciado entre enlaces */
+    font-size: 18px;
+    /* Ajusta el tamaño del texto de los enlaces según tus preferencias */
+    padding: 4px 15px;
+    /* Añade relleno para que parezca un botón */
+    border-radius: 5px;
+    /* Agrega bordes redondeados */
+    transition: background-color 0.5s, text-decoration 0.5s, margin-bottom 0.3s, border-top 0.2s ease-in-out, border-bottom 0.5s;
+    position: relative;
+    /* Permite posicionar el borde relativo al elemento padre */
+    margin-top: 44%;
+    /* Añade un poco de espacio debajo del texto */
+    border-top: 3px solid #3498db;
+    /* Agrega un borde (línea) debajo del texto */
+}
+
+.btn-link:hover {
+    text-decoration: none;
+    /* Quita el subrayado por defecto */
+    color: #3498db;
+    /* Cambia el color del texto al pasar el mouse */
+    margin-bottom: 1px;
+    /* Añade un poco de espacio debajo del texto */
+    border-bottom: 3px solid #3498db;
+    /* Agrega un borde (línea) debajo del texto */
+    border-top: 3px solid transparent;
+    /* Desaparece la línea de arriba */
+    transition: border-top 0.5s;
+    /* Ajusta la duración y función de temporización de la transición específica al pasar el ratón por encima */
+}
+
+
+.btn-link:active {
+    color: #ffffff;
+    /* Cambia el color del texto al hacer clic */
+    border: 2px solid #ffffff;
+    /* Agrega un borde al hacer clic */
+}
+
+
+
+
+
+
+
+
+
+.soluciones-img {
+    background-image: url('./static/fondo3.jpg');
+    background-size: auto;
+    max-width: auto;
+    min-height: 800px;
+    background-color: #ffffff;
+    position: relative;
+    text-align: center;
+    padding: 80px 0;
+    background-repeat: no-repeat;
+}
+
+.soluciones-img .text-soluciones {
+    color: #ffffff;
+    font-size: 80px;
+    margin-bottom: 30px;
+    display: inline-block;
+    padding: 350px 0 0 0;
+    text-shadow: 2px 2px 4px #000000, -2px -2px 4px #ffffff;
+}
+
+
+.soluciones-img .ul-central {
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+}
+
+.soluciones-img .ul-central li {
+    display: inline-block; /* Cambia para que los elementos li estén uno al lado del otro */
+    margin: 0 20px;
+    border-bottom: none; /* Elimina la línea inferior */  
+}
+
+.soluciones-img .ul-central li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+    position: relative;
+    text-shadow: 2px 2px 4px #000000, -2px -2px 4px #9e3d3d;
+}
+
+.soluciones-img .ul-central li a:hover {
+    color: #53bae4;
+}
+
+
+.soluciones-img .ul-central {
+    list-style: none;
+    padding: 0;
+}
+
+.ul-central li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.ul-central li a {
+    text-decoration: none;
+}
+
+.ul-central li span {
+    display: block;
+}
+
+.ul-central li img {
+    width: 50px; /* Puedes ajustar el tamaño de la imagen según tus necesidades */
+    height: 50px;
+    margin-bottom: 20px; /* Espaciado entre la imagen y el texto */
+    transition: transform 0.3s ease;
+}
+
+
+
+/* Estilos para imágenes activas e interactivas */
+.ul-central li a:hover img,
+.ul-central li a:active img,
+.ul-central li a:focus img,
+.ul-central li.active a img {
+    transform: scale(1.5);
+}
+
+/* Establece la imagen inicial de la pestaña activa */
+#selectronica-tab.active a img {
+    content: url('./static/selectronica-activado.png');
+}
+
+#telecomunicaciones-tab.active a img {
+    content: url('./static/redes-activado.png');
+}
+
+#slogica-tab.active a img {
+    content: url('./static/logica-activado.png');
+}
+
+.ul-central li img.active-img {
+    transform: scale(1.5);
+}
+
+
+#soluciones-tabs {
+    color: #000000;
+    padding: 8px 20px;
+    width: 90%;
+    max-width: 1400px;
+    min-height: 400px;
+    margin: 80px auto;
+}
+
+#soluciones-tabs > div {
+    text-align: center;    
+}
+
+
+#listas-electronicas {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+#listas-electronicas > div {
+    max-width: 320px;
+    margin: 10px 10px;
+}
+
+#listas-electronicas img {
+    width: auto;
+    height: 190px;
+}
+
+#camaras-vig,
+#detec-incendios,
+#alarmas,
+#control-acceso {
+    background-color: #ffffff;
+    background-image: url('static/fondo-soluciones.jpg');
+    background-size: 100% 46%;
+    background-repeat: no-repeat;
+    padding: 0.5rem;
+    min-width: 320px; /* Establece un ancho mínimo para mantener el tamaño */
+}
+
+#camaras-vig {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 10px;
+}
+
+#detec-incendios {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 20px;
+}
+
+#alarmas,
+#control-acceso {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+
+
+#listas-telecomunicaciones {
+    display: flex;
+    justify-content: space-around;
+      
+}
+
+#listas-telecomunicaciones > div {
+    max-width: 326px;
+}
+
+#listas-telecomunicaciones img {
+    width: auto;
+    height: 180px;
+}
+
+#cableado {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: #ffffff;
+    background-image: url('static/fondo-soluciones.jpg'); /* Reemplaza 'ruta/de/la/imagen.jpg' con la URL de tu imagen */
+    background-size: 100% 46%;    /* Porcentaje del ancho x Porcentaje de alto */ /* Ajusta el tamaño de la imagen para cubrir completamente el fondo */
+    /* Otros estilos para tu elemento */
+    background-repeat: no-repeat;
+    padding: 1rem;
+}
+
+#VoIP {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 10px;
+    background-color: #ffffff;
+    background-image: url('static/fondo-soluciones.jpg'); /* Reemplaza 'ruta/de/la/imagen.jpg' con la URL de tu imagen */
+    background-size: 100% 46%;    /* Porcentaje del ancho x Porcentaje de alto */ /* Ajusta el tamaño de la imagen para cubrir completamente el fondo */
+    /* Otros estilos para tu elemento */
+    background-repeat: no-repeat;
+    padding: 1rem;
+}
+
+#solucioneswifi {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 20px;
+    background-color: #ffffff;
+    background-image: url('static/fondo-soluciones.jpg'); /* Reemplaza 'ruta/de/la/imagen.jpg' con la URL de tu imagen */
+    background-size: 100% 46%;    /* Porcentaje del ancho x Porcentaje de alto */ /* Ajusta el tamaño de la imagen para cubrir completamente el fondo */
+    /* Otros estilos para tu elemento */
+    background-repeat: no-repeat;
+    padding: 1rem;
+}
+
+
+
+#listas-logica {
+    display: flex;
+    justify-content: space-around;  
+}
+
+#listas-logica > div {
+    max-width: 330px;
+}
+
+#listas-logica img {
+    width: auto;
+    height: 200px;
+}
+
+#infrati {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 20px;
+    background-color: #ffffff;
+    background-image: url('static/fondo-soluciones.jpg'); /* Reemplaza 'ruta/de/la/imagen.jpg' con la URL de tu imagen */
+    background-size: 100% 46%;    /* Porcentaje del ancho x Porcentaje de alto */ /* Ajusta el tamaño de la imagen para cubrir completamente el fondo */
+    /* Otros estilos para tu elemento */
+    background-repeat: no-repeat;
+    padding: 1rem;
+}
+
+
+#soluciones-tabs img {
+    transition: transform 0.3s ease;
+}
+
+
+#soluciones-tabs img:hover {
+    transform: scale(1.2) translateY(-10px);
+    /* Puedes ajustar estos valores según tus preferencias */
+}
+
+
+#soluciones-tabs .conocer a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    display: inline-block;
+    padding: 8px 20px;
+    border: 2px solid #3498db;
+    transition: background-color 0.3s;
+    background-color: #3498db;
+    border-radius: 10px; /* Ajusta este valor para hacer las esquinas más redondeadas */
+}
+
+#soluciones-tabs .conocer a:hover {
+    background-color: #297fb8; /* Cambia el color de fondo al hacer hover */
+}
+
+
+/* Agrega estilos según sea necesario para los contenidos de las pestañas */
+.tab-content {
+    display: none;
+    animation: fadeEffect 0.5s ease-in-out;
+}
+
+@keyframes fadeEffect {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.tab-content.active {
+    display: relative;
+}
+
+
+
+
+/* Estilos para el modal */
+.modal {
+    display: none; /* Por defecto, el modal estará oculto */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro semi-transparente */
+    z-index: 1100;
+}
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border-radius: 80px;
+    min-height: 400px;
+    /* Puedes agregar más estilos según sea necesario */
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: black;
+}
+
+
+ /* CCTV MODAL */
+
+.flex-modal {
+    display: flex;
+    align-items: center;
+}
+
+.flex-modal h2 {
+    display: flex;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.background-modal1 {
+    background-image: url('static/modal1.jpeg');
+    width: 100%; /* Establece el ancho del div al 100% del contenedor padre */
+    min-height: 500px; /* Establece la altura del div a 300 pixels, puedes ajustar este valor según tus necesidades */
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir completamente el fondo */
+    border: none; /* Elimina los bordes del div */
+}
+
+
+
+.texto1 {
+    background-color: grey;
+    border: 2px solid rgba(0, 0, 0, 0.5); /* Borde gris opaco */
+    border-radius: 8px; /* Esquinas redondeadas */
+    padding: 8px;
+    color: white; /* Cambiar el color del texto para que sea legible en el fondo gris */
+    margin-left: 20px;
+}
+
+.texto2 {
+    text-align: left;
+    margin-left: 20px;
+}
+
+.flex-modal h3 {
+    text-align: center;
+    margin: 20px;
+}
+
+.flex-modal a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    display: inline-block;
+    padding: 8px 20px;
+    border: 2px solid #3498db;
+    transition: background-color 0.3s;
+    background-color: #3498db;
+    border-radius: 10px; /* Ajusta este valor para hacer las esquinas más redondeadas */
+}
+
+
+ /* CONTROL DE ACCESO MODAL */
+
+.flex-modal2 {
+    display: flex;
+    align-items: center;
+}
+
+
+.flex-modal2 h3 {
+    text-align: center;
+    margin: 20px;
+}
+
+.flex-modal2 a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    display: inline-block;
+    padding: 8px 20px;
+    border: 2px solid #3498db;
+    transition: background-color 0.3s;
+    background-color: #3498db;
+    border-radius: 10px; /* Ajusta este valor para hacer las esquinas más redondeadas */
+}
+
+.background-modal2 {
+    background-image: url('static/modal2.jpg');
+    width: 100%; /* Establece el ancho del div al 100% del contenedor padre */
+    min-height: 500px; /* Establece la altura del div a 300 pixels, puedes ajustar este valor según tus necesidades */
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir completamente el fondo */
+    border: none; /* Elimina los bordes del div */
+}
+
+.lista-enumerada {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.lista-enumerada li {
+    counter-increment: lista;
+    margin-bottom: 8px;
+    padding-bottom: 6px;
+    text-align: left; /* Ajusta el texto a la izquierda */
+    margin-left: 40px;
+}
+
+.lista-enumerada li::before {
+    content: counter(lista) ". ";
+    display: inline-block;
+    width: 1em;
+    margin-right: 0.6em;
+    text-align: left; /* Ajusta el texto a la izquierda */
+    color: #3498db; /* Puedes ajustar el color según tus preferencias */
+    font-weight: bold;
+}
+
+
+
+
+ /* DETECCION DE INTRUSOS MODAL */
+
+.flex-modal3 {
+    display: flex;
+    align-items: center;
+}
+
+
+
+.flex-modal3 h3 {
+    text-align: center;
+    margin: 20px;
+}
+
+.flex-modal3 a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    display: inline-block;
+    padding: 8px 20px;
+    border: 2px solid #3498db;
+    transition: background-color 0.3s;
+    background-color: #3498db;
+    border-radius: 10px; /* Ajusta este valor para hacer las esquinas más redondeadas */
+}
+
+.background-modal3 {
+    background-image: url('static/modal3.jpg');
+    width: 100%; /* Establece el ancho del div al 100% del contenedor padre */
+    min-height: 500px; /* Establece la altura del div a 300 pixels, puedes ajustar este valor según tus necesidades */
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir completamente el fondo */
+    border: none; /* Elimina los bordes del div */
+}
+
+/* DETECCION DE INCENDIOS */
+
+.flex-modal4 {
+    display: flex;
+    align-items: center;
+}
+
+
+.background-modal4 {
+    background-image: url('static/modal4.jpg');
+    width: 100%; /* Establece el ancho del div al 100% del contenedor padre */
+    min-height: 500px; /* Establece la altura del div a 300 pixels, puedes ajustar este valor según tus necesidades */
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir completamente el fondo */
+    border: none; /* Elimina los bordes del div */
+}
+
+
+.flex-modal4 h3 {
+    text-align: center;
+    margin: 20px;
+}
+
+.flex-modal4 a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    display: inline-block;
+    padding: 8px 20px;
+    border: 2px solid #3498db;
+    transition: background-color 0.3s;
+    background-color: #3498db;
+    border-radius: 10px; /* Ajusta este valor para hacer las esquinas más redondeadas */
+}
+
+
+
+/* VozIP */
+
+.flex-modal5 {
+    display: flex;
+    align-items: center;
+}
+
+
+.background-modal5 {
+    background-image: url('static/modal5.jpg');
+    width: 100%; /* Establece el ancho del div al 100% del contenedor padre */
+    min-height: 500px; /* Establece la altura del div a 300 pixels, puedes ajustar este valor según tus necesidades */
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir completamente el fondo */
+    border: none; /* Elimina los bordes del div */
+}
+
+
+.flex-modal5 h3 {
+    text-align: center;
+    margin: 20px;
+}
+
+.flex-modal5 a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    display: inline-block;
+    padding: 8px 20px;
+    border: 2px solid #3498db;
+    transition: background-color 0.3s;
+    background-color: #3498db;
+    border-radius: 10px; /* Ajusta este valor para hacer las esquinas más redondeadas */
+}
+
+
+/* Cableado Estructurado */
+
+.flex-modal6 {
+    display: flex;
+    align-items: center;
+}
+
+
+.background-modal6 {
+    background-image: url('static/modal6.jpg');
+    width: 100%; /* Establece el ancho del div al 100% del contenedor padre */
+    min-height: 620px; /* Establece la altura del div a 300 pixels, puedes ajustar este valor según tus necesidades */
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir completamente el fondo */
+    border: none; /* Elimina los bordes del div */
+}
+
+
+.flex-modal6 h3 {
+    text-align: center;
+    margin: 20px;
+}
+
+.flex-modal6 a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    display: inline-block;
+    padding: 8px 20px;
+    border: 2px solid #3498db;
+    transition: background-color 0.3s;
+    background-color: #3498db;
+    border-radius: 10px; /* Ajusta este valor para hacer las esquinas más redondeadas */
+}
+
+
+/* Soluciones wifi */
+
+.flex-modal7 {
+    display: flex;
+    align-items: center;
+}
+
+
+.background-modal7 {
+    background-image: url('static/modal7.jpg');
+    width: 100%; /* Establece el ancho del div al 100% del contenedor padre */
+    min-height: 500px; /* Establece la altura del div a 300 pixels, puedes ajustar este valor según tus necesidades */
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir completamente el fondo */
+    border: none; /* Elimina los bordes del div */
+}
+
+
+.flex-modal7 h3 {
+    text-align: center;
+    margin: 20px;
+}
+
+.flex-modal7 a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    display: inline-block;
+    padding: 8px 20px;
+    border: 2px solid #3498db;
+    transition: background-color 0.3s;
+    background-color: #3498db;
+    border-radius: 10px; /* Ajusta este valor para hacer las esquinas más redondeadas */
+}
+
+
+/* Infraestructura TI */
+
+.flex-modal8 {
+    display: flex;
+    align-items: center;
+}
+
+
+.background-modal8 {
+    background-image: url('static/modal8.jpg');
+    width: 100%; /* Establece el ancho del div al 100% del contenedor padre */
+    min-height: 600px; /* Establece la altura del div a 300 pixels, puedes ajustar este valor según tus necesidades */
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir completamente el fondo */
+    border: none; /* Elimina los bordes del div */
+}
+
+
+.flex-modal8 h3 {
+    text-align: center;
+    margin: 20px;
+}
+
+.flex-modal8 a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    display: inline-block;
+    padding: 8px 20px;
+    border: 2px solid #3498db;
+    transition: background-color 0.3s;
+    background-color: #3498db;
+    border-radius: 10px; /* Ajusta este valor para hacer las esquinas más redondeadas */
+}
+
+
+
+
+
+
+.desarrollo-soporte {
+    padding-top: 80px;
+    background-color: #ffffff;
+    margin-bottom: 80px;
+}
+
+/* Desarrollo-proyectos */
+.desarrollo-proyectos {
+    background-color: #ffffff; /* Cambia el color de fondo según tus preferencias */
+    padding: 80px 0; /* Ajusta el espacio interno según tus preferencias */
+    background-image: url('static/fondo-desarrollo.jpg');
+    background-size: 102% 100%; /* Cubre todo el alto y ajusta automáticamente el ancho */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita la repetición de la imagen */
+}
+
+.desarrollo-proyectos div {
+    max-width: 800px; /* Ajusta el ancho máximo del contenedor según tus preferencias */
+    margin: 0 auto; /* Centra el contenedor en la página */
+    text-align: center; /* Alinea el texto al centro */
+}
+
+.desarrollo-proyectos h2 {
+    color: #3498db; /* Cambia el color del título según tus preferencias */
+    font-size: 2em; /* Ajusta el tamaño del título según tus preferencias */
+}
+
+.desarrollo-proyectos h3 {
+    color: #333; /* Cambia el color del subtítulo según tus preferencias */
+    font-size: 1.5em; /* Ajusta el tamaño del subtítulo según tus preferencias */
+    font-weight: bold; /* Aplica negrita al subtítulo */
+}
+
+.desarrollo-proyectos h3 b {
+    font-weight: bold;
+    color: #3498db; /* Cambia el color según tus preferencias */
+}
+
+.desarrollo-proyectos p {
+    color: #555; /* Cambia el color del párrafo según tus preferencias */
+    font-size: 1em; /* Ajusta el tamaño del texto según tus preferencias */
+    line-height: 1.5; /* Ajusta la altura de línea según tus preferencias */
+    text-align: left;
+}
+
+/* Soporte */
+.support {
+    background-color: #f4f4f4; /* Cambia el color de fondo según tus preferencias */
+    padding: 80px 0; /* Ajusta el espacio interno según tus preferencias */
+    background-image: url('static/fondo-support.jpg');
+    background-size: 102% 100%; /* Cubre todo el alto y ajusta automáticamente el ancho */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita la repetición de la imagen */
+    margin-top: 80px;
+    overflow: hidden;
+}
+
+.support div {
+    max-width: 800px; /* Ajusta el ancho máximo del contenedor según tus preferencias */
+    margin: 0 auto; /* Centra el contenedor en la página */
+    text-align: center; /* Alinea el texto al centro */
+}
+
+.support h2 {
+    color: #3498db; /* Cambia el color del título según tus preferencias */
+    font-size: 2em; /* Ajusta el tamaño del título según tus preferencias */
+}
+
+.support h3 {
+    color: #333; /* Cambia el color del subtítulo según tus preferencias */
+    font-size: 1.5em; /* Ajusta el tamaño del subtítulo según tus preferencias */
+    font-weight: bold; /* Aplica negrita al subtítulo */
+}
+
+.support h3 b {
+    font-weight: bold;
+    color: #3498db; /* Cambia el color según tus preferencias */
+}
+
+.support p {
+    color: #555; /* Cambia el color del párrafo según tus preferencias */
+    font-size: 1em; /* Ajusta el tamaño del texto según tus preferencias */
+    line-height: 1.5; /* Ajusta la altura de línea según tus preferencias */
+    text-align: left;
+}
+
+
+
+
+/* Estilos opcionales para el carrusel */
+.slick-carousel {
+    margin: 20px auto; /* Centra el carrusel en el cuerpo */
+    max-width: 800px; /* Ajusta el ancho máximo del carrusel según tus preferencias */
+}
+
+.slick-carousel img {
+    width: 100%; /* Ajusta el ancho de las imágenes al 100% del contenedor */
+    height: 14vh; /* Ajusta la altura de las imágenes según tus preferencias */
+}
+
+
+.slick-prev, .slick-next {
+    font-size: 0; /* Oculta el texto original */
+    background: transparent; /* Fondo transparente */
+    border: none; /* Sin borde */
+    position: absolute; /* Posiciona de forma absoluta */
+    top: 50%; /* Centra verticalmente en relación al contenedor */
+    transform: translateY(-50%); /* Ajusta verticalmente según la altura del ícono */
+    color: #3498db; /* Ajusta el color de los íconos según tus preferencias */
+    cursor: pointer; /* Cambia el cursor al pasar sobre las flechas */
+    z-index: 1050; /* Ajusta la superposición sobre el carrusel */
+}
+
+.slick-prev {
+    left: 10px; /* Ajusta la distancia desde el borde izquierdo */
+}
+
+.slick-next {
+    right: 10px; /* Ajusta la distancia desde el borde derecho */
+}
+
+/* Estilos adicionales para las flechas del carrusel */
+.slick-prev::before, .slick-next::before {
+    content: ''; /* Elimina el contenido predeterminado de las flechas */
+    display: inline-block; /* Permite aplicar estilos a ::before */
+    width: 24px; /* Ajusta el ancho de las flechas */
+    height: 24px; /* Ajusta la altura de las flechas */
+    border: solid #3498db; /* Color del borde de las flechas */
+    border-width: 0 3px 3px 0; /* Estilo de las flechas */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Añade sombra a las flechas */
+}
+
+.slick-prev::before {
+    transform: rotate(135deg); /* Gira la flecha previa en 135 grados */
+}
+
+.slick-next::before {
+    transform: rotate(-45deg); /* Gira la flecha siguiente en -45 grados */
+}
+
+
+
+.contactos {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centra horizontalmente */
+    margin-top: 60px; /* espacio entre carrucel y formulario */
+}
+
+
+
+
+.container3 {
+    width: 40%; /* Cambia el ancho según sea necesario */
+    margin: 0; /* Ajusta el margen según sea necesario */
+    height: 0%;
+}
+
+
+.contact-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contactos {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px; /* Espacio entre .contactos y el formulario */
+}
+
+.datos-contacto {
+    background-image: url(static/fondo5.jpg);
+    background-size: cover;
+    background-position: center;
+    display: block;
+    text-align: center;
+    color: #ffffff;
+    width: 20rem;
+    height: 26rem;
+    padding-top: 70px; /* Ajusta este valor según sea necesario para mover el texto hacia abajo */
+    box-sizing: border-box; /* Asegúrate de incluir el relleno en el tamaño total del elemento */
+}
+
+.datos-contacto a {
+    color: #f2f3f5; /* Cambiar el color del enlace a blanco */
+    text-decoration: none; /* Eliminar el subrayado del enlace */
+    font-family: 'Lato Black', sans-serif; /* Cambiar la fuente del enlace a Lato Black */
+}
+
+.redes {
+    padding-top: -20px;
+    margin-top: -40px;
+}
+.redes ul.seguinos-footer {
+    display: flex;
+    justify-content: center;
+    margin-top: -24px; /* Agregar margen superior según sea necesario */
+    padding-left: 0px
+}
+
+.redes ul.seguinos-footer a {
+    margin: 0 10px; /* Agregar margen horizontal entre los enlaces según sea necesario */
+}
+
+
+.seguinos-footer img {
+    width: 40px;
+    height: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+.contact-form h3 {
+    text-align: center;
+}
+
+.form-fields {
+    margin-top: 20px;
+}
+
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.form-group {
+    flex: 0 0 48%;
+}
+
+.field {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.btn {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block; /* Convertir el botón en un bloque para que ocupe todo el ancho disponible */
+    margin: 0 auto; /* Establecer un margen automático en los lados para centrar horizontalmente */
+    text-align: center; /* Alinear el texto dentro del botón al centro */
+}
+
+
+
+
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0; /* Ajusta el espacio interno superior e inferior */
+    height: 180px; /* Establece la altura del footer */
+}
+
+.container7 {
+    width: 100%;
+    margin: auto;
+    
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+}
+
+.contactos-footer {
+    width: calc(100% / 3);
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+
+h3 {
+    font-size: 1.2rem;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+/* Ajustar tamaño de los logos */
+seguinos-footer {
+    max-width: 32px; /* Establece el ancho máximo de los logos */
+    height: auto; /* Permite que la altura se ajuste automáticamente para mantener la proporción */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media query para dispositivos móviles (ancho máximo de 767px) */
+@media only screen and (max-width: 1200px) {
+    .active_mind {
+        display: none;
+        /* Oculta el elemento con la clase .active_mind */
+    }
+
+    .tecnico {
+        width: 100%;
+        /* Ajusta el ancho al 100% en dispositivos móviles */
+    }
+
+}
+
+@media screen and (max-width: 1025px) {
+    header {
+        flex-direction: column;
+        /* Cambia la dirección del diseño a columna en pantallas más pequeñas */
+        text-align: center;
+        /* Centra el texto cuando está en una columna */
+    }
+
+    nav {
+        margin-top: 10px;
+        /* Añade un margen superior para separar el menú en pantallas más pequeñas */
+    }
+
+    header img {
+        margin-right: 0;
+        /* Elimina el margen derecho del logo en pantallas más pequeñas */
+        margin-bottom: 10px;
+        /* Añade un margen inferior al logo en pantallas más pequeñas */
+    }
+}
+
+/* Estilos adicionales para dispositivos móviles */
+@media screen and (max-width: 999px) {
+    #mobile-nav-toggle {
+        display: block;
+        /* Muestra el botón en dispositivos móviles */
+    }
+
+    header {
+        flex-direction: column;
+        /* Cambia la dirección del diseño a columna en pantallas más pequeñas */
+        text-align: center;
+        /* Centra el texto cuando está en una columna */
+    }
+
+    nav {
+        display: none;
+        /* Oculta la barra de navegación en dispositivos móviles, aparecerá al hacer clic en el botón */
+        flex-direction: column;
+        /* Alinea los enlaces verticalmente en pantallas más pequeñas */
+    }
+
+    nav.show-nav {
+        display: flex;
+        /* Muestra la barra de navegación cuando tiene la clase 'show-nav' */
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    #mobile-nav-toggle {
+        display: none;
+        /* Oculta el botón en pantallas más grandes (web) */
+    }
+
+    nav {
+        display: flex;
+        /* Muestra la barra de navegación en pantallas más grandes (web) */
+    }
+}
+
+@media only screen and (max-width: 1319px) {
+    .iconos-servicios-container {
+        display: none;
+        /* Oculta el elemento en dispositivos móviles */
+    }
+}
+
+
+/* Media query para dispositivos móviles (ajusta según tus necesidades) */
+@media only screen and (max-width: 1319px) {
+
+    #consultoria,
+    #ejecucion-de-proyectos,
+    #servicio-de-soporte {
+        margin-bottom: 2%;
+        /* Ajusta el espacio entre los elementos en dispositivos móviles */
+        flex-direction: column;
+        /* Cambia la dirección a columna en dispositivos móviles */
+        flex: 1 1 100%;
+        /* Ocupa el 100% del ancho en dispositivos móviles */
+
+    }
+
+    #consultoria img,
+    #ejecucion-de-proyectos img,
+    #servicio-de-soporte img {
+        display: block;
+        /* Asegura que los iconos sean elementos de bloque */
+        margin: 10px auto 10px;
+        /* Centra los iconos horizontalmente y añade espacio inferior */
+        width: 20%;
+        /* Ajusta el ancho de los iconos según tus necesidades */
+        height: auto;
+        /* Mantiene la proporción original */
+        margin-bottom: 10px;
+        /* Espaciado entre los iconos y el contenido siguiente */
+    }
+}
+
+
+
+@media only screen and (max-width: 1319px) {
+    #soluciones img {
+        height: 300vh;
+        /* 100% de la altura de la ventana */
+        object-fit: cover;
+        /* Cubre el contenedor manteniendo la proporción y recortando el exceso */
+        margin: 0 auto;
+        /* Centra la imagen horizontalmente dentro del contenedor */
+        display: block;
+        /* Asegura que la imagen sea un elemento de bloque */
+    }
+}
