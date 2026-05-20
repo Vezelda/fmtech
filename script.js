@@ -133,7 +133,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (playButton) {
         playButton.addEventListener('click', function() {
             playOverlay.style.opacity = '0.5';
-            videoFrame.src = 'https://www.youtube.com/embed/oqO4UDrRKKs?autoplay=1';
+            //videoFrame.src = 'https://www.youtube.com/embed/oqO4UDrRKKs?autoplay=1';
             overlay.style.display = 'flex';
             resizeVideoPopup();
             setTimeout(function() { videoPopup.style.top = '25%'; }, 50);
